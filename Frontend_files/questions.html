@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"/>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link rel = "icon" href = "lions-logo.jpg" type = "image/x-icon">
+
+    <link rel="stylesheet" href="cs_sheet.css"/>
+
+    <title>Lion's airport city</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 sticky-top border topnav-right border_modified">
+      <div class="container">
+        <a href="index.html" class="navbar-dark">
+            <img src = "lions-logo.jpg">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+        </button>
+
+        <h4>
+        <div class="collapse navbar-collapse " id="navmenu">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item button px-3">
+                <a href="index.html" class="nav-link rounded">Home</a>
+              </li>
+              <li class="nav-item button px-3">
+                <a href="about.html" class="nav-link rounded">About</a>
+              </li>
+              <li class="nav-item button px-3">
+              <a href="facilities.html" class="nav-link rounded">Facilities</a>
+              </li>
+              <li class="nav-item button px-3">
+                <a href="gallery.html" class="nav-link rounded">Gallery</a>
+                </li>
+            <li class="nav-item button px-3 active">
+                <a href="#questions" class="nav-link rounded">FAQ</a>
+                </li>
+              <li class="nav-item button px-3">
+                <a href="contact.html" class="nav-link rounded">Contact</a>
+              </li>
+          </li>
+          </ul>
+        </div>
+        </h4>
+      </div>
+    </nav>
+<div class="justify-content-center text-center">
+  <img src="FAQ.png" width="90%">
+  <h1 class="text" style="font-size: 80px; font-family: Georgia, 'Times New Roman', Times, serif;color:darkorchid;"><b>FAQ's / Help</b></h1>
+</div>
+
+<!-- Question Accordion -->
+<section id="questions" class="p-5">
+  <section class="bg-light text-black p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div class="container align-items-center px-5 justify-content-between">
+        <div class="accordion" id="accordionFlushExample">
+          <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              <h4 class="font-weight-normal">What is Lions Airport city club?</h4>
+              </button>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><h5 class="font-weight-normal">The Bangalore Airport city Lions Service Trust is formed to establish and manage the permanent service projects of Lions Club of Bangalore Airport city.
+                Lions Airport city Old Age Home is an activity of Bangalore Airport city Lions Service Trust.</h5></div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                <h4 class="font-weight-normal">Where is it situated?</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><h5 class="font-weight-normal">3rd Cross Road, Devarachikkanahalli,
+                Bannerghatta Main Rd, Sagar Layout, Stage 4,
+                Bommanahalli, Bengaluru, Karnataka 560076</h5></div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+               <h4 class="font-weight-normal"> What is the minimum age to move into LACCOH?</h4>
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body"><h5 class="font-weight-normal">60 years</h5> </div>
+            </div>
+          </div>
+
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+             <h4 class="font-weight-normal">Can me and my wife move in together into a same room?</h4>
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body"><h5 class="font-weight-normal">If available, definitely yes!</h5></div>
+          </div>
+        </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+           <h4 class="font-weight-normal">What is the pricing in Lion's airport city Old age home?</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><h5 class="font-weight-normal">Well, there is no definite number of pricing as it depends on the needs of the person. We customize our package as per the needs and requirements of your elders. We want them to get the best health care facilities and therefore we can only say the pricing in detail when you call us and talk in detail about the needs.</h5> </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+          <h4 class="font-weight-normal">What are the visiting hours?</h4>
+          </button>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingOneSix" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><h5 class="font-weight-normal">We want to become the name for everyone. Thus, if you have your elders with us, you can visit at any point of time. However, it is always a request to the family members to observe what they are doing. Besides, if you make prior scheduling it can be great to maintain the healthy everyday routine of the elders.</h5></div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            <h4 class="font-weight-normal">Can the family members stay in the facility with the elders?</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><h5 class="font-weight-normal">Even when you have the facility to visit anytime, it is requested not to ask for a stay as we don’t encourage it. Since there are different types of elders who are suffering from different mental disabilities like dementia, it can become harsh on them. Besides, it can also be hard for your closed one as it disturbs the entire routine of the loved ones.</h5></div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingEight">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+           <h4 class="font-weight-normal">Will the plan change when they get older?</h4>
+          </button>
+        </h2>
+        <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><h5 class="font-weight-normal">Yes! When they initially come here as an independent living facility which does not include much nursing or medical care, but as they grow older and they tend to get some problems, it might result in changing the plans. This will depend on the facilities that we have to offer to ensure a healthy and happy living for your elders. However, you can stay assured that we will discuss before we start applying just to keep you informed.</h5> </div>
+        </div>
+      </div>
+
+
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingNine">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+         <h4 class="font-weight-normal">Are the staffs trained?</h4>
+        </button>
+      </h2>
+      <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body"><h5 class="font-weight-normal">Yes! Everyone in our facilities who are categorized under caregivers are certified and trained. Since we have people coming from different walks of life, we aim to stay prepared to have the facilities that can take care of everyone and anyone. Pour caregivers are available to offer round the clock care to the people by addressing the need for an emergency medical team.</h5></div>
+      </div>
+    </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTen">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+       <h4 class="font-weight-normal">What does your basic care facility include?</h4>
+      </button>
+    </h2>
+    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h5 class="font-weight-normal">We believe that elders need complete attention and care and therefore we have a facility that includes different care options. Some of them are: 
+
+        Health care: We have the best medical team to take round the clock care for you. We have emergency care facilities as well for the people who need it. Besides, we make sure to check their daily health and help them in carrying out their daily lifestyle with ease.<br>
+        Food: We have the nutritionist and dietician who check the health report individually before giving them food. Not only do we aim to maintain their health with proper medical care but we want you to eat the right food to grow both mentally and physically. We offer home cooked foods for the best of health.<br>
+        Entertainment: We understand the need for entertainment and therefore we offer music, arts, and religious times for them. We also have outdoor sessions where we take them to temple and nearby places once a week to help them stay happy within the facility.<br>
+        Housekeeping: We have the best team in our facilities. We offer complete laundry and cleaning services to make sure that your seniors are safe and happy with us. Our house care includes the laundry and cleaning every single day.</h5> </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center position-relative">
+  <div class="container">
+    <p class="lead">Copyright &copy; 2022 Lion's airport city</p>
+    <div class="container align-items-center justify-content-between">
+      <div class="row">
+        <div class="col-sm lead my-4">
+          <h4>Address:</h4> 3rd Cross Road, Devarachikkanahalli, <br>
+                          Bannerghatta Main Rd, Sagar Layout, Stage 4,<br>
+                          Bommanahalli, Bengaluru, Karnataka 560076
+        </div>
+        <div class="col-sm lead">
+          <h4>Phone :</h4>+91 9743615474<br>
+          <h4>Email :</h4> lcbairportcity2021@gmail.com
+        </div>
+      </div>
+    </div>
+    <a href="#" class="position-absolute bottom-0 end-0 p-5">
+      <i class="bi bi-arrow-up-circle h1"></i>
+    </a>
+  </div>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+  </html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"/>
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <link rel = "icon" href = "lions-logo.jpg" type = "image/x-icon">
+
+    <link rel="stylesheet" href="cs_sheet.css"/>
+
+    <title>Lion's airport city</title>
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 sticky-top border topnav-right border_modified">
+      <div class="container">
+        <a href="index.html" class="navbar-dark">
+            <img src = "lions-logo.jpg">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+        </button>
+
+        <h4>
+        <div class="collapse navbar-collapse " id="navmenu">
+          <ul class="navbar-nav ms-auto">
+
+            <li class="nav-item button px-3" role="tablist">
+              <a href="index.html" class="nav-link rounded">Home</a>
+            </li>
+            <li class="nav-item button px-3">
+              <a href="about.html" class="nav-link rounded">About</a>
+            </li>
+            <li class="nav-item button px-3">
+            <a href="facilities.html" class="nav-link rounded">Facilities</a>
+            </li>
+            <li class="nav-item button px-3">
+              <a href="gallery.html" class="nav-link rounded">Gallery</a>
+              </li>
+            <li class="nav-item button px-3">
+              <a href="questions.html" class="nav-link rounded">FAQ</a>
+              </li>
+            <li class="nav-item button px-3 active">
+              <a href="#query" class="nav-link rounded">Contact</a>
+            </li>
+          </li>
+          </ul>
+        </div>
+        </h4>
+      </div>
+    </nav>
+
+
+
+
+<!-- Query-->
+<section id="query">
+    <section class="bg-light text-black p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container h-100">
+              <div class="card text-black" style="border-radius: 25px;">
+                <div class="card-body p-lg-5">
+                  <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+      
+                      <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: blue;" ><b>Get in touch with us</b></h2>
+                      <hr style="clear:both;"/>
+                      <form class="mx-1 mx-md-4">
+                        <h4>
+                        <div class="my-4">
+                          <label for="name" class="form-label">Name</label>
+                          <input type="text" class="form-control form-control-lg" id="name" required>
+                        </div>
+      
+                        <div class="my-4">
+                          <label class="form-label">Email address</label>
+                          <input type="email" class="form-control form-control-lg" id="email" placeholder="abc@xyz.com" required>
+                        </div>
+      
+                        <div class="my-4">
+                          <label for="phone" class="form-label">Phone Number</label>
+                          <div class="input-group">
+                          <span class="input-group-text">+91</span>
+                          <input type="tel" class="form-control form-control-lg" id="phone" required>
+                        </div>
+                        </div>
+
+
+                        <div class="my-4">
+                          <label for="city" class="form-label">City</label>
+                          <input type="text" class="form-control form-control-lg" id="city" required>
+                        </div>
+
+                        <div class="mb-4">
+                          <label for="query" class="form-label">Comment/Query</label>
+                          <textarea class="form-control form-control-lg" id="query" rows="3" placeholder="Enter your text here..." required></textarea>
+                        </div>
+                        </h4>
+                        <p class="text-center">We will get back to you by call or mail soon!!</p>
+                        <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
+                          <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                        </div>
+                        
+                      </form>
+      
+                    </div>
+                    <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+                      <img src="query.png" class="img-fluid animate__animated animate__pulse animate__slower animate__infinite">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+  </section>
+  
+<br><br><br>
+
+
+
+
+
+<!-- Contact Us -->
+<section class="p-5">
+    <section class="bg-light text-black p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+      <div id="contact" class="container-sm bg-gradient">
+        <div class="d-flex align-items-center px-4 justify-content-between">
+          <div>
+            <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: blue;" ><b>Locate Us</b></h2>
+            <hr style="clear:both;"/>
+          </div>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row text-center g-4">
+        <div class="col-md">
+          <div class="card bg-warning bg-gradient text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-arrow-90deg-left"></i>
+              </div>
+              <h3 class="card-title mb-3">Location</h3>
+              <p class="card-text">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.27568352117!2d77.61161205112504!3d12.889986420105148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14da1c5eb94f%3A0x1f5a5b4804a7e6cc!2sDevarachikkanahalli%20Rd%20%26%203rd%20Cross%20Rd%2C%20Royal%20Shelters%2C%20Stage%204%2C%20BDA%20Layout%20BTM%204th%20Stage%2C%20Bengaluru%2C%20Karnataka%20560076!5e0!3m2!1sen!2sin!4v1639509169439!5m2!1sen!2sin" 
+                width="600" height="435" style="border:0;" allowfullscreen=""></iframe>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-info text-dark">
+            <div class="card-body text-center">
+              <div class="h1 mb-3">
+                <i class="bi bi-person-square"></i>
+              </div>
+              <h3 class="card-title mb-3">Address :</h3>
+              <p class="card-text">
+                <h4>
+                3rd Cross Road, Devarachikkanahalli, <br>
+                Bannerghatta Main Rd, Sagar Layout, Stage 4,<br>
+                Bommanahalli, Bengaluru, Karnataka 560076<br><br><br><br>
+                </h4>
+                <h3>Phone :</h3><h4>+91 9743615474</h4><br><br><br><br>
+                <h3>Email :</h3><h4>lcbairportcity2021@gmail.com</h4>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  </section>
+  
+
+  
+
+<!-- Footer -->
+<footer class="p-5 bg-dark text-white text-center position-relative">
+    <div class="container">
+      <p class="lead">Copyright &copy; 2022 Lion's airport city</p>
+  
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="bi bi-arrow-up-circle h1"></i>
+      </a>
+    </div>
+  </footer>
+  
+  </body>
+  </html>
