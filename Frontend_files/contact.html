@@ -101,35 +101,35 @@
       
                       <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: blue;" ><b>Get in touch with us</b></h2>
                       <hr style="clear:both;"/>
-                      <form class="mx-1 mx-md-4">
+                      <form class="mx-1 mx-md-4" action="/contact" method="POST">
                         <h4>
                         <div class="my-4">
                           <label for="name" class="form-label">Name</label>
-                          <input type="text" class="form-control form-control-lg" id="name" required>
+                          <input type="text" class="form-control form-control-lg" id="name" name="Name" required>
                         </div>
       
                         <div class="my-4">
                           <label class="form-label">Email address</label>
-                          <input type="email" class="form-control form-control-lg" id="email" placeholder="abc@xyz.com" required>
+                          <input type="email" class="form-control form-control-lg" id="email" placeholder="abc@xyz.com" name="Email" required>
                         </div>
       
                         <div class="my-4">
                           <label for="phone" class="form-label">Phone Number</label>
                           <div class="input-group">
                           <span class="input-group-text">+91</span>
-                          <input type="tel" class="form-control form-control-lg" id="phone" required>
+                          <input type="tel" class="form-control form-control-lg" id="phone" name="Phonenumber" required>
                         </div>
                         </div>
 
 
                         <div class="my-4">
                           <label for="city" class="form-label">City</label>
-                          <input type="text" class="form-control form-control-lg" id="city" required>
+                          <input type="text" class="form-control form-control-lg" id="city" name="City" required>
                         </div>
 
                         <div class="mb-4">
                           <label for="query" class="form-label">Comment/Query</label>
-                          <textarea class="form-control form-control-lg" id="query" rows="3" placeholder="Enter your text here..." required></textarea>
+                          <textarea class="form-control form-control-lg" id="query" rows="3" placeholder="Enter your text here..." name="query" required></textarea>
                         </div>
                         </h4>
                         <p class="text-center">We will get back to you by call or mail soon!!</p>
