@@ -11,7 +11,7 @@ const port =process.env.PORT || 3000;
 
 //setting path
 //const staticpath =path.join(__dirname);
-const staticpath= path.join(__dirname,"../public");
+const staticpath= path.join(__dirname,"../Frontend_files");
 
 console.log(staticpath);
 
