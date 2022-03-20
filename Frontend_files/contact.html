@@ -23,7 +23,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
     <link rel = "icon" href = "lions-logo.jpg" type = "image/x-icon">
 
     <link rel="stylesheet" href="cs_sheet.css"/>
@@ -46,12 +45,14 @@
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
         >
+        <!-- Button logo-->
+        <span class="navbar-toggler-icon"></span>
         </button>
 
         <h4>
         <div class="collapse navbar-collapse " id="navmenu">
           <ul class="navbar-nav ms-auto">
-
+            <!-- List of navbar items -->
             <li class="nav-item button px-3" role="tablist">
               <a href="index.html" class="nav-link rounded">Home</a>
             </li>
@@ -91,6 +92,8 @@
       
                       <h2 style="font-family: Georgia, 'Times New Roman', Times, serif; color: blue;" ><b>Get in touch with us</b></h2>
                       <hr style="clear:both;"/>
+
+                      <!-- Form class(connecting to backend) -->
                       <form class="mx-1 mx-md-4" action="/contact" method="POST">
                         <h4>
                         <div class="my-4">
@@ -110,7 +113,6 @@
                           <input type="tel" class="form-control form-control-lg" id="phone" name="Phonenumber" required>
                         </div>
                         </div>
-
 
                         <div class="my-4">
                           <label for="city" class="form-label">City</label>
@@ -132,6 +134,8 @@
       
                     </div>
                     <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                      <!-- Image with animation -->
                       <img src="query.png" class="img-fluid animate__animated animate__pulse animate__slower animate__infinite">
                     </div>
                   </div>
@@ -161,14 +165,17 @@
       </div>
     <div class="container">
       <div class="row text-center g-4">
+        <!-- Single row 2 columns -->
         <div class="col-md">
           <div class="card bg-warning bg-gradient text-dark">
             <div class="card-body text-center">
               <div class="h1 mb-3">
+                <!-- icon class -->
                 <i class="bi bi-arrow-90deg-left"></i>
               </div>
               <h3 class="card-title mb-3">Location</h3>
               <p class="card-text">
+                <!-- Google map api -->
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.27568352117!2d77.61161205112504!3d12.889986420105148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae14da1c5eb94f%3A0x1f5a5b4804a7e6cc!2sDevarachikkanahalli%20Rd%20%26%203rd%20Cross%20Rd%2C%20Royal%20Shelters%2C%20Stage%204%2C%20BDA%20Layout%20BTM%204th%20Stage%2C%20Bengaluru%2C%20Karnataka%20560076!5e0!3m2!1sen!2sin!4v1639509169439!5m2!1sen!2sin" 
                 width="600" height="435" style="border:0;" allowfullscreen=""></iframe>
               </p>
@@ -179,6 +186,7 @@
           <div class="card bg-info text-dark">
             <div class="card-body text-center">
               <div class="h1 mb-3">
+                <!-- icon class -->
                 <i class="bi bi-person-square"></i>
               </div>
               <h3 class="card-title mb-3">Address :</h3>
@@ -208,10 +216,12 @@
       <p class="lead">Copyright &copy; 2022 Lion's airport city</p>
   
       <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <!-- icon class -->
         <i class="bi bi-arrow-up-circle h1"></i>
       </a>
     </div>
   </footer>
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
   </body>
   </html>
