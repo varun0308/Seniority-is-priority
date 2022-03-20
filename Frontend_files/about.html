@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
+    <!-- Necessary Header files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"/>
-      <link
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-
     <link rel = "icon" href = "lions-logo.jpg" type = "image/x-icon">
 
     <link rel="stylesheet" href="cs_sheet.css"/>
@@ -29,39 +37,44 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light px-0 sticky-top border topnav-right border_modified">
       <div class="container">
+
+        <!-- Navbar logo -->
         <a href="index.html" class="navbar-dark">
             <img src = "lions-logo.jpg">
         </a>
-
+        <!-- Button for slide down of navigation bar-->
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
         >
+        <!-- Button logo-->
+        <span class="navbar-toggler-icon"></span>
         </button>
 
         <h4>
-        <div class="collapse navbar-collapse " id="navmenu">
+        <div class="navbar-collapse collapse" id="navmenu">
           <ul class="navbar-nav ms-auto">
 
+            <!-- List of navbar items -->
             <li class="nav-item button px-3">
-              <a href="index.html" class="nav-link rounded">Home</a>
+              <a href="index.html" class="nav-link ">Home</a>
             </li>
             <li class="nav-item button px-3 active">
-              <a href="#about" class="nav-link rounded">About</a>
+              <a href="#" class="nav-link">About</a>
             </li>
             <li class="nav-item button px-3">
-            <a href="facilities.html" class="nav-link rounded">Facilities</a>
+            <a href="facilities.html" class="nav-link">Facilities</a>
             </li>
             <li class="nav-item button px-3">
-              <a href="gallery.html" class="nav-link rounded">Gallery</a>
+              <a href="gallery.html" class="nav-link">Gallery</a>
               </li>
             <li class="nav-item button px-3">
-              <a href="questions.html" class="nav-link rounded">FAQ</a>
+              <a href="questions.html" class="nav-link">FAQ</a>
               </li>
             <li class="nav-item button px-3">
-              <a href="contact.html" class="nav-link rounded">Contact</a>
+              <a href="contact.html" class="nav-link">Contact</a>
             </li>
           </li>
           </ul>
@@ -78,6 +91,8 @@
       <div class="container">
         <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>About Us</b></h2>
         <hr style="clear:both;"/>
+
+        <!-- Image with animation -->
           <img src="Lions_club.jpeg" class="animate__animated animate__backInLeft animate__slower" />
             <h4 class="font-weight-normal">
             <p>
@@ -92,6 +107,8 @@
               Immediate past Chairman is Lion M.Muni Reddy, and Lion S Somashekar and the present Trust Chairman is Lion Linga Reddy.<br>
             </p>
             <p><br><br><br>
+
+              <!-- Image with animation -->
               <img src="about.jpg" class="float-right animate__animated animate__backInRight animate__slower" />
               The Trust founding team of office bearers and other 25 Trustees were all well placed, respectable, 
               well educated members of the society who established a platform for service by joining together.
@@ -114,6 +131,7 @@
   <div class="container">
     <div class="container align-items-center justify-content-between">
       <div class="row">
+        <!-- Single row 2 columns -->
         <div class="col-sm lead my-4">
           <h4>Address:</h4> 3rd Cross Road, Devarachikkanahalli, <br>
                           Bannerghatta Main Rd, Sagar Layout, Stage 4,<br>
@@ -131,6 +149,7 @@
     <p class="lead">Copyright &copy; 2022 Lion's airport city</p>
   </div>
 </footer>
-  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
   </body>
   </html>
