@@ -27,7 +27,7 @@ app.post("/contact",async(req,res)=>{
         //res.send(req.body);
         const userData = new User(req.body);
         await userData.save();  
-        res.send("Form submitted successfully!!!!");  
+        res.status(201).send("Form submitted successfully!!!!");  
         res.status(201).render("index");  
 
     } catch(error){
