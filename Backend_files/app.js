@@ -9,8 +9,6 @@ console.log();
 
 const port =process.env.PORT || 3000;
 
-//setting path
-//const staticpath =path.join(__dirname);
 const staticpath= path.join(__dirname,"../Frontend_files");
 
 console.log(staticpath);
@@ -28,10 +26,9 @@ app.post("/contact",async(req,res)=>{
     try{
         //res.send(req.body);
         const userData = new User(req.body);
-        await userData.save();    
-        res.status(201).render("index");
-        res.send("Form submitted successfully!!!!");
-        
+        await userData.save();  
+        res.send("Form submitted successfully!!!!");  
+        res.status(201).render("index");  
 
     } catch(error){
         res.status(500).send(error);
